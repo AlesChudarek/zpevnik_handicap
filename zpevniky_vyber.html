@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Výběr zpěvníků</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f7f7f7;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .book {
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .book img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      aspect-ratio: 148 / 210; /* A5 poměr stran */
+      object-fit: cover;
+      background: #ddd url("img/covers/placeholder.jpg") center/contain no-repeat;
+    }
+    .book-title {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1>Výběr zpěvníků</h1>
+  <div class="grid">
+    <!-- Placeholder knihy -->
+    <div class="book">
+      <a href="zpevniky/zpevnik1/index.html">
+        <img src="img/covers/placeholder.jpg" alt="Zpěvník 1">
+        <div class="book-title">Zpěvník 1</div>
+      </a>
+    </div>
+    <div class="book">
+      <a href="zpevniky/zpevnik2/index.html">
+        <img src="img/covers/placeholder.jpg" alt="Zpěvník 2">
+        <div class="book-title">Zpěvník 2</div>
+      </a>
+    </div>
+    <div class="book">
+      <a href="zpevniky/zpevnik3/index.html">
+        <img src="img/covers/placeholder.jpg" alt="Zpěvník 3">
+        <div class="book-title">Zpěvník 3</div>
+      </a>
+    </div>
+    <!-- ... můžeš zopakovat až do Zpěvník 30 -->
+  </div>
+</body>
+</html>
